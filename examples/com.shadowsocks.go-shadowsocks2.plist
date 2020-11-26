@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>Label</key>
+    <string>com.shadowsocks.go-shadowsocks2</string>
+    <key>KeepAlive</key>
+    <true/>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>ProgramArguments</key>
+    <array>
+      <string>/usr/local/bin/go-shadowsocks2</string>
+      <string>-c</string>
+      <string>'ss://AEAD_CHACHA20_POLY1305:pa$$w0rd@ip:80'</string>
+      <string>-verbose</string>
+      <string>-socks</string>
+      <string>:1919</string>
+    </array>
+    <key>StandardErrorPath</key>
+    <string>/dev/null</string>
+    <key>StandardOutPath</key>
+    <string>/dev/null</string>
+  </dict>
+</plist>
